@@ -1,20 +1,20 @@
-name: PowerItems
-main: xyz.tangledwires.poweritems.PowerItems
+name: Controversial
+main: xyz.tangledwires.controversial.Controversial
 version: 1.0.0
-author: YT_TangledWires
+author: xWires
 commands:
-   testitem:
-      description: Obtain the testing items
-      usage: /testitem
-      permission: poweritems.testitem
-      permission-message: You don't have permission.
-   createitem:
-      description: Construct a new custom item
-      usage: /createitem <internalName> <itemMaterial> <damageValue> <rarity> <itemName>
-      permission: poweritems.createitem
-      permission-message: You don't have permission.
-   getitem:
-      description: Get an item from the config file
-      usage: /getitem <internalName>
-      permission: poweritems.getitem
-      permission-message: You don't have permission.
+   startvote:
+      description: Start a vote!
+      usage: /startvote (topic)
+      permission: controversial.startvote
+      permission-message: You don't have permission to start a vote.
+   voteyes:
+      description: Vote yes to the current question.
+      usage: /voteyes
+      permission: controversial.voteyes
+      permission-message: You don't have permission to vote on this question.
+   voteno:
+      description: Vote no to the current question
+      usage: /voteno
+      permission: controversial.voteno
+      permission-message: You don't have permission to vote on this question.
